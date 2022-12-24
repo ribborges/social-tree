@@ -1,34 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import Avatar from "./components/avatar/Avatar";
+import Icon from "./components/icon/Icon";
+import Icons from "./components/icons/Icons";
+import Link from "./components/link/Link";
+import Links from "./components/links/Links";
+import Usertag from "./components/usertag/Usertag";
 
-function App() {
-  const [count, setCount] = useState(0)
+import './styles/_app.scss';
 
+export default function App() {
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="container">
+      <Avatar src="https://avatars.githubusercontent.com/u/46366493" />
+      <Usertag>@instagram</Usertag>
+      <Links>
+        <Link href="https://example.com">LINK 1</Link>
+        <Link href="https://example.com">LINK 2</Link>
+        <Link href="https://example.com">LINK 3</Link>
+        <Link href="https://example.com">LINK 4</Link>
+      </Links>
+      <Icons>
+        <Icon href="https://example.com"><i className="bi bi-twitter"></i></Icon>
+        <Icon href="https://example.com"><i className="bi bi-twitch"></i></Icon>
+        <Icon href="https://example.com"><i className="bi bi-instagram"></i></Icon>
+        <Icon href="https://example.com"><i className="bi bi-linkedin"></i></Icon>
+        <Icon href="https://example.com"><i className="bi bi-github"></i></Icon>
+      </Icons>
     </div>
   )
 }
-
-export default App

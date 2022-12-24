@@ -1,0 +1,13 @@
+.icons {
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+@media screen and (max-width: 600px) {
+    .icons {
+        width: 90vw;
+    }
+}
