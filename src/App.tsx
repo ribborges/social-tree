@@ -10,13 +10,13 @@ import './styles/_app.scss';
 export default function App() {
   return (
     <div className="container">
-      <Avatar src="https://avatars.githubusercontent.com/u/46366493" />
+      <Avatar src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />
       <Usertag>@instagram</Usertag>
       <Links>
-        <Link href="https://example.com">LINK 1</Link>
-        <Link href="https://example.com">LINK 2</Link>
-        <Link href="https://example.com">LINK 3</Link>
-        <Link href="https://example.com">LINK 4</Link>
+        <Link href="https://example.com">Instagram</Link>
+        <Link href="https://example.com">Facebook</Link>
+        <Link href="https://example.com">Twitter</Link>
+        <Link href="https://example.com">LinkedIn</Link>
       </Links>
       <Icons>
         <Icon href="https://example.com"><i className="bi bi-twitter"></i></Icon>
