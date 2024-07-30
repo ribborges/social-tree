@@ -10,20 +10,28 @@ import './styles/_app.scss';
 export default function App() {
   return (
     <div className="container">
-      <Avatar src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" />
-      <Usertag>@instagram</Usertag>
+      <Avatar src="https://avatars.githubusercontent.com/u/46366493?v=4" />
+      <Usertag>@ribborges</Usertag>
       <Links>
-        <Link href="https://example.com">Instagram</Link>
-        <Link href="https://example.com">Facebook</Link>
-        <Link href="https://example.com">Twitter</Link>
-        <Link href="https://example.com">LinkedIn</Link>
+        <Link href="https://www.instagram.com/ribborges/">Instagram</Link>
+        {
+          /*
+            <Link href="https://example.com">Facebook</Link>
+            <Link href="https://example.com">Twitter</Link>
+          */
+        }
+        <Link href="https://www.linkedin.com/in/ribborges/">LinkedIn</Link>
       </Links>
       <Icons>
-        <Icon href="https://example.com"><i className="bi bi-twitter"></i></Icon>
-        <Icon href="https://example.com"><i className="bi bi-twitch"></i></Icon>
-        <Icon href="https://example.com"><i className="bi bi-instagram"></i></Icon>
-        <Icon href="https://example.com"><i className="bi bi-linkedin"></i></Icon>
-        <Icon href="https://example.com"><i className="bi bi-github"></i></Icon>
+        {
+          /*
+            <Icon href="https://example.com"><i className="bi bi-twitter"></i></Icon>
+            <Icon href="https://example.com"><i className="bi bi-twitch"></i></Icon>
+          */
+        }
+        <Icon href="https://www.instagram.com/ribborges/"><i className="bi bi-instagram"></i></Icon>
+        <Icon href="https://www.linkedin.com/in/ribborges/"><i className="bi bi-linkedin"></i></Icon>
+        <Icon href="https://github.com/ribborges"><i className="bi bi-github"></i></Icon>
       </Icons>
     </div>
   )
