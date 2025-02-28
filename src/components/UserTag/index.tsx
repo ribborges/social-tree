@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import './_style.scss';
 
 interface UsertagProps {
   children?: ReactNode,
@@ -7,6 +6,8 @@ interface UsertagProps {
 
 export default function Usertag(props: UsertagProps) {
   return (
-    <span className='usertag'>{props.children}</span>
+    <span className="font-bold">
+      {props.children}
+    </span>
   )
 }
