@@ -1,8 +1,16 @@
 {
   "name": "social-tree",
+  "description": "My social media links",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.1",
   "type": "module",
+  "license": "MPL-2.0",
+  "repository": "https://github.com/ribborges/social-tree",
+  "author": {
+    "name": "Richard Borges",
+    "email": "contato@richardborges.dev",
+    "url": "https://richardborges.dev"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
