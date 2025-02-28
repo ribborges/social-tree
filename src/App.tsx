@@ -1,38 +1,27 @@
-import Avatar from "./components/avatar/Avatar";
-import Icon from "./components/icon/Icon";
-import Icons from "./components/icons/Icons";
-import Link from "./components/link/Link";
-import Links from "./components/links/Links";
-import Usertag from "./components/usertag/Usertag";
+import { EnvelopeFill, Github, Globe2, Linkedin } from "react-bootstrap-icons";
 
-import './styles/_app.scss';
+import Avatar from "@/components/Avatar";
+import { Icon, IconList } from "@/components/Icon";
+import { Link, LinkList } from "@/components/Link";
+import Usertag from "@/components/UserTag";
 
 export default function App() {
   return (
-    <div className="container">
+    <main className="flex flex-col items-center justify-center gap-8 w-screen h-screen bg-white text-zinc-900 dark:bg-black dark:text-zinc-200">
       <Avatar src="https://avatars.githubusercontent.com/u/46366493?v=4" />
       <Usertag>@ribborges</Usertag>
-      <Links>
-        <Link href="https://www.instagram.com/ribborges/">Instagram</Link>
-        {
-          /*
-            <Link href="https://example.com">Facebook</Link>
-            <Link href="https://example.com">Twitter</Link>
-          */
-        }
-        <Link href="https://www.linkedin.com/in/ribborges/">LinkedIn</Link>
-      </Links>
-      <Icons>
-        {
-          /*
-            <Icon href="https://example.com"><i className="bi bi-twitter"></i></Icon>
-            <Icon href="https://example.com"><i className="bi bi-twitch"></i></Icon>
-          */
-        }
-        <Icon href="https://www.instagram.com/ribborges/"><i className="bi bi-instagram"></i></Icon>
-        <Icon href="https://www.linkedin.com/in/ribborges/"><i className="bi bi-linkedin"></i></Icon>
-        <Icon href="https://github.com/ribborges"><i className="bi bi-github"></i></Icon>
-      </Icons>
-    </div>
+      <LinkList>
+        <Link href="https://www.linkedin.com/in/ribborges/"><span>LinkedIn</span></Link>
+        <Link href="https://www.richardborges.dev/"><span>Portfolio</span></Link>
+        <Link href="https://github.com/ribborges/"><span>Github</span></Link>
+        <Link href="mailto:contato@richardborges.dev"><span>Email</span></Link>
+      </LinkList>
+      <IconList>
+        <Icon href="https://www.linkedin.com/in/ribborges/"><Linkedin /></Icon>
+        <Icon href="https://www.richardborges.dev/"><Globe2 /></Icon>
+        <Icon href="https://github.com/ribborges"><Github /></Icon>
+        <Icon href="mailto:contato@richardborges.dev"><EnvelopeFill /></Icon>
+      </IconList>
+    </main>
   )
 }
